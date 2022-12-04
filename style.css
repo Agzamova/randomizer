@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ececec;
+}
+
+.header {
+    margin: 0 auto;
+    margin-bottom: 8px;
+    padding-top: 12px;
+    max-width: 800px;
+    font-size: 24px;
+}
+
+.res {
+    margin: 0;
+    font-size: 72px;
+    margin-bottom: 40px;
+}
+
+.move {
+    transform: translateY(-30%);
+    animation: ani 1s forwards;
+}
+
+@keyframes ani {
+    0% {transform: translateY(-30%);}
+    100% {transform: translateX(0);}
+}
+
+.btn-reset {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn {
+    width: 220px;
+    height: 60px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-radius: 6px;
+    font-size: 24px;
+    font-style: italic;
+    text-shadow: 2px 2px 3px #fff;
+    user-select: none;
+    background: linear-gradient(rgb(255,239,163), rgb(255,130,0));
+    box-shadow:
+    0 1px rgba(255,255,255,.2) inset,
+    0 3px 5px rgba(0,1,6,.5),
+    0 0 1px 1px rgba(0,1,6,.2);
+    transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+    background: linear-gradient(rgb(255,130,0), rgb(255,239,163));
+    transition: all .3s ease-in-out;
+}
+
+.text {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.input {
+    width: 60px;
+}
